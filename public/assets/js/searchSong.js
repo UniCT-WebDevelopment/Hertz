@@ -312,11 +312,10 @@ function onYouTubeIframeAPIReady(id) {
 }
 var statusPlayer="stop";
 function OnPlayerStateChange(event) {
- console.log(event.data);
     statusPlayer=event.data;
     switch(event.data){
         case 0 :
-            stausPlayer = "ended"
+            stausPlayer = "ended";
             break;
 
         case 1 :
@@ -357,7 +356,7 @@ function initialize(){
         updateProgressBar();
         if((statusPlayer=="ended") || (player.getCurrentTime() > 0 && player.getCurrentTime() == player.getDuration())){
             var nxSong;
-            if($("#play-song").attr("class") == "m-2 d-none"){
+            if($("#play-song").attr("class") == "m-2 pr-3 d-none"){
                 bool = true;
             }
             if(searchsong && !discover && !favorites && !playlist){
@@ -503,8 +502,8 @@ var play_next = 0;
 var play_prev = 0;
 $("#forward").on("click", function(){
     var nxSong;
-    if(videoloaded && searchsong && !discover && playlist && !favorites){
-        if($("#play-song").attr("class") == "m-2 d-none") bool = true;
+    if(videoloaded && searchsong && !discover && !playlist && !favorites){
+        if($("#play-song").attr("class") == "m-2 pr-3 d-none") bool = true;
         nxSong = nextSong(onPlayingSong);
         playNextSong(nxSong);
         if(bool) {

@@ -170,7 +170,7 @@ $(document).ready( function(){
                     $("#myRange").attr("value", data.v);
                     if(data.v == 0) icon_vol.innerHTML = "<i class=\"fas fa-volume-off\"></i>";
                 } else if(data.message == "NO-TOKEN" || data.message == "TOKEN-SCADUTO"){
-                    console.log(data.message);
+                    //console.log(data.message);
                     console.log("Token scaduto o non esistente");
                 }
             });
