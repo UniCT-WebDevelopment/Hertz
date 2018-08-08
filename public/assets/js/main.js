@@ -285,12 +285,14 @@ $(document).ready( function(){
             if(data.songList.length == 0) {$("#favorites").html("<p class='m-3' style='font-size: 1.3vw' id='error-message'>Start to add your Favorite music!</p>")}
             if(data.songList.length != 0) {$("#favorites").text("")}
             data.songList.forEach(function (element) {
-                var elem = "<li onclick='play(this, \"favorites\")' class='d-inline-flex result-list hvr-glow album-element'>" +
+                var elem = $("<li class='d-inline-flex result-list hvr-glow album-element'>" +
                     "<img class='album-cover' src=" + element.Image + ">" +
                     "<p class='song-title song-name'>" + element.Title + "</p>" +
                     "<p class='song-title song-artist'>" + element.Artist +
-                    "</p><i class='fas fa-minus preferiti' onclick='removeFromFavorites(this)'></i></li>";
+                    "</p><i class='fas fa-minus preferiti' onclick='removeFromFavorites(this)'></i></li>");
+
                 $("#favorites").append(elem);
+                $(elem).on("click",function(){play(elem, "favorites")})
                 nextFavSong.push([element.Title, element.Artist, element.Image]);
             });
         });

@@ -13,8 +13,8 @@ var $video_window = document.getElementById("video-hidden-window");
 var $on_playing = document.getElementById("play-song");
 var $song_list = "";
 var $panel, $panel_results, $top_albums, $top_albums2;
-var player,
-    time_update_interval = 0;
+var player = null
+    var time_update_interval = 0;
 var volume = 20;
 var value = 0;
 var clickedOn = false;
@@ -271,9 +271,9 @@ var youtubeSongSearch = function(q){
             var nResults = obr_response.pageInfo.totalResults;
             if(nResults > 0){
                 var videoID = results[0].id.videoId;
-                $video_window.innerHTML = "<div id='player'></div>";
+
                 onYouTubeIframeAPIReady(videoID);
-                videoloaded = true;
+
                 playing = true;
                 slider2.disabled = false;
                 slider.disabled = false;
@@ -290,19 +290,52 @@ var youtubeSongSearch = function(q){
 
 //PLAYER/////////////////////////////////////////////////////////////
 function onYouTubeIframeAPIReady(id) {
-    player = new YT.Player('player', {
-            height: '1',
-            width: '1',
-            videoId: id,
-            host: 'https://www.youtube.com',
-            playerVars: { 'autoplay': 1, 'hd': 1},
-            events: {
-                onReady : initialize
-            }
-    });
+
+
+        if(!player || !player.loadVideoById) {
+            $video_window.innerHTML = "<div id='player'></div>";
+            player = new YT.Player('player', {
+                height: '1',
+                width: '1',
+                videoId: id,
+                host: 'https://www.youtube.com',
+                playerVars: {'autoplay': 1, 'hd': 1},
+                events: {
+                    onReady: initialize,
+                    onStateChange: OnPlayerStateChange
+                }
+            });
+        } else {
+            player.loadVideoById(id,0,"small");
+        }
+
+}
+var statusPlayer="stop";
+function OnPlayerStateChange(event) {
+ console.log(event.data);
+    statusPlayer=event.data;
+    switch(event.data){
+        case 0 :
+            stausPlayer = "ended"
+            break;
+
+        case 1 :
+            statusPlayer = "playing";
+            break;
+
+        case 2:
+            statusPlayer="pause";
+            break;
+
+        case -1:
+            statusPlayer="changingOutSide";
+            break;
+    }
+
 }
 //settaggio durata e currenttime della progress bar
 function initialize(){
+    videoloaded = true;
     updateTimerDisplay();
     updateProgressBar();
     player.setVolume(volume);
@@ -322,8 +355,7 @@ function initialize(){
     time_update_interval = setInterval(function () {
         updateTimerDisplay();
         updateProgressBar();
-        if((player.getCurrentTime() == player.getDuration()) || (playing && player.getCurrentTime() == 0)){
-
+        if((statusPlayer=="ended") || (player.getCurrentTime() > 0 && player.getCurrentTime() == player.getDuration())){
             var nxSong;
             if($("#play-song").attr("class") == "m-2 d-none"){
                 bool = true;
@@ -339,7 +371,7 @@ function initialize(){
                 nxSong = nextDiscoverSong(onPlayingSong, nextsonglist);
                 playNextDiscoverSong(nxSong);
             } else if(!discover && !searchsong && favorites && !playlist){
-                nxSong = nextDiscoverSong(onPlayingSong, nextPlaylistSong);
+                nxSong = nextDiscoverSong(onPlayingSong, nextFavSong);
                 playNextDiscoverSong(nxSong);
             } else if(!discover && !searchsong && !favorites && playlist){
                 nxSong = nextDiscoverSong(onPlayingSong, nextPlaylistSong);
@@ -350,9 +382,12 @@ function initialize(){
 }
 
 // This function is called by initialize()
-function updateTimerDisplay(){
-    $('#current-time').text(formatTime( player.getCurrentTime() ));
-    $('#duration').text(formatTime( player.getDuration()));
+function updateTimerDisplay() {
+    if (player.getCurrentTime) {
+
+        $('#current-time').text(formatTime(player.getCurrentTime()));
+        $('#duration').text(formatTime(player.getDuration()));
+        }
 }
 
 function formatTime(time){
@@ -386,8 +421,13 @@ $('#progress-bar').on('mouseup touchend', function (e) {
 
 function updateProgressBar() {
     // Update the value of our progress bar accordingly.
-    $('#progress-bar').val(((player.getCurrentTime() / player.getDuration())) * 100);
-    $('.progressbar').css("width", $('#progress-bar').val()  + "%");
+    if (player.getCurrentTime && player.getCurrentTime()>0 ) {
+        $('#progress-bar').val(((player.getCurrentTime() / player.getDuration())) * 100);
+        $('.progressbar').css("width", $('#progress-bar').val() + "%");
+    } else {
+        $('#progress-bar').val((0* 100));
+        $('.progressbar').css("width", 0+ "%");
+    }
 }
 
 //PLAY/PAUSE
