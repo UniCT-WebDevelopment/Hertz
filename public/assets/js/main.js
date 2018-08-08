@@ -155,7 +155,7 @@ $(document).ready( function(){
     Cookies.getJson = function (cookieName) {
         return JSON.parse(Cookies.get(cookieName));
     };
-    console.log(Cookies.get("userSession"));
+    //console.log(Cookies.get("userSession"));
     if(Cookies.get("userSession") != undefined){
         var obj = Cookies.getJson("userSession");
         //console.log(Cookies.getJson("userSession"));

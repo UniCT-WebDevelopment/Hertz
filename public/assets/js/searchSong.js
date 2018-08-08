@@ -22,6 +22,7 @@ var songPrevList = [];
 var songList = []; var onPlayingSong = "";
 var videoloaded = false; var prevSclicked = false; var bool = false;
 var precPage = "";
+var playing = false;
 var search = function(){
     songList = [];
     queryString = $search_input.value;
@@ -273,6 +274,7 @@ var youtubeSongSearch = function(q){
                 $video_window.innerHTML = "<div id='player'></div>";
                 onYouTubeIframeAPIReady(videoID);
                 videoloaded = true;
+                playing = true;
                 slider2.disabled = false;
                 slider.disabled = false;
             } else{
@@ -320,8 +322,8 @@ function initialize(){
     time_update_interval = setInterval(function () {
         updateTimerDisplay();
         updateProgressBar();
-        console.log(player.getCurrentTime());
-        if(player.getCurrentTime() == player.getDuration()){
+        if((player.getCurrentTime() == player.getDuration()) || (playing && player.getCurrentTime() == 0)){
+
             var nxSong;
             if($("#play-song").attr("class") == "m-2 d-none"){
                 bool = true;
@@ -394,9 +396,11 @@ $("#play").on("click", function () {
         var className = $('#play').children("i").attr('class');
         if(className == "fa fa-play"){
             player.playVideo();
+            playing = true;
             $("#play").children("i").removeClass("fa fa-play").addClass("fa fa-pause");
         } else{
             player.pauseVideo();
+            playing = false;
             $("#play").children("i").removeClass("fa fa-pause").addClass("fa fa-play");
         }
     }
