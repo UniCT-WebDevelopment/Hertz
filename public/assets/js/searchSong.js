@@ -320,6 +320,7 @@ function initialize(){
     time_update_interval = setInterval(function () {
         updateTimerDisplay();
         updateProgressBar();
+        console.log(player.getCurrentTime());
         if(player.getCurrentTime() == player.getDuration()){
             var nxSong;
             if($("#play-song").attr("class") == "m-2 d-none"){
