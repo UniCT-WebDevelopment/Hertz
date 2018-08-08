@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bd543537-839f-4ba1-9f1d-f59c5727ee9b" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="750">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="10" column="56" lean-forward="false" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="560">
+              <caret line="14" column="14" lean-forward="false" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/assets/js/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-6475">
+              <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+              <folding>
+                <marker date="1533720246259" expanded="true" signature="13824:13840" ph="..." />
+                <marker date="1533720246259" expanded="true" signature="18034:18048" ph="..." />
+                <marker date="1533720246259" expanded="true" signature="21284:21369" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Discover.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/assets/js/Discover.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="10" column="34" lean-forward="false" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="searchSong.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/assets/js/searchSong.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="4" column="34" lean-forward="false" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="34" />
+              <folding>
+                <marker date="1533678560549" expanded="true" signature="6760:6775" ph="..." />
+                <marker date="1533678560549" expanded="true" signature="7315:7349" ph="..." />
+                <marker date="1533678560549" expanded="true" signature="7489:7523" ph="..." />
+                <marker date="1533678560549" expanded="true" signature="7658:7676" ph="..." />
+                <marker date="1533678560549" expanded="true" signature="8060:8091" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/assets/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="27480">
+              <caret line="687" column="13" lean-forward="false" selection-start-line="687" selection-start-column="13" selection-end-line="687" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>prevFclicked</find>
+      <find>delete-playlist-success</find>
+      <find>userLogin</find>
+      <find>PRIMA</find>
+      <find>.mesh-user-title</find>
+      <find>song-lis</find>
+      <find>songLi</find>
+      <find>songListening</find>
+      <find>playUser</find>
+      <find>mesh-user-title</find>
+      <find>someoneis</find>
+      <find>starclicked</find>
+      <find>adding-success</find>
+      <find>expire</find>
+      <find>actual</find>
+      <find>actualVolume</find>
+      <find>/login</find>
+      <find>volume</find>
+      <find>login</find>
+      <find>INSERT</find>
+      <find>setVolume</find>
+      <find>Cookies.set</find>
+      <find>videoloaded</find>
+      <find>slider.disabled</find>
+      <find>INSERT into sess</find>
+      <find>progress</find>
+      <find>req.session.user</find>
+      <find>prec</find>
+      <find>href</find>
+      <find>url</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/../Sito/css/app.v1.css" />
+        <option value="$PROJECT_DIR$/../Sito/index.html" />
+        <option value="$PROJECT_DIR$/style-register.css" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/assets/css/style.css" />
+        <option value="$PROJECT_DIR$/assets/js/main.js" />
+        <option value="$PROJECT_DIR$/searchSong.html" />
+        <option value="$PROJECT_DIR$/auth.js" />
+        <option value="$PROJECT_DIR$/search.js" />
+        <option value="$PROJECT_DIR$/assets/js/database.js" />
+        <option value="$PROJECT_DIR$/style.css" />
+        <option value="$PROJECT_DIR$/register.html" />
+        <option value="$PROJECT_DIR$/assets/js/searchSong.js" />
+        <option value="$USER_HOME$/Documents/Universitá/Terzo Anno/WebDev/Esercizi/Progetto1/assets/js/main.js" />
+        <option value="$PROJECT_DIR$/public/assets/js/prova.js" />
+        <option value="$PROJECT_DIR$/prova.html" />
+        <option value="$PROJECT_DIR$/ciao.html" />
+        <option value="$PROJECT_DIR$/public/assets/js/displayVideo.html" />
+        <option value="$PROJECT_DIR$/public/assets/js/ciao.js" />
+        <option value="$PROJECT_DIR$/public/displayVideo.html" />
+        <option value="$USER_HOME$/Downloads/Telegram Desktop/main.js" />
+        <option value="$PROJECT_DIR$/../player/script.js" />
+        <option value="$PROJECT_DIR$/song.css" />
+        <option value="$PROJECT_DIR$/song.html" />
+        <option value="$PROJECT_DIR$/public/assets/js/youtubeplayer.js" />
+        <option value="$PROJECT_DIR$/public/assets/js/searchAlbumSongs.js" />
+        <option value="$PROJECT_DIR$/ciao.js" />
+        <option value="$PROJECT_DIR$/carosello.html" />
+        <option value="$PROJECT_DIR$/ciaone.html" />
+        <option value="$PROJECT_DIR$/public/assets/css/style-register.css" />
+        <option value="$USER_HOME$/Downloads/Hertz/Hertz/public/assets/js/searchSong.js" />
+        <option value="$PROJECT_DIR$/public/prova.html" />
+        <option value="$PROJECT_DIR$/../untitled/mymodule.js" />
+        <option value="$PROJECT_DIR$/hertz_desktop.js" />
+        <option value="$PROJECT_DIR$/../Hertz7/Hertz/main.js" />
+        <option value="$PROJECT_DIR$/../hertz_desktop/public/assets/css/style.css" />
+        <option value="$PROJECT_DIR$/../hertz_desktop/main.js" />
+        <option value="$PROJECT_DIR$/../hertz_desktop/public/index.html" />
+        <option value="$PROJECT_DIR$/../hertz_desktop/hertz_desktop.js" />
+        <option value="$PROJECT_DIR$/../hertz_desktop/public/assets/js/main.js" />
+        <option value="$PROJECT_DIR$/public/register.html" />
+        <option value="$PROJECT_DIR$/public/style.css" />
+        <option value="$PROJECT_DIR$/date.js" />
+        <option value="$PROJECT_DIR$/../Hertz_Deskop/public/index.html" />
+        <option value="$PROJECT_DIR$/../Hertz_Deskop/public/register.html" />
+        <option value="$PROJECT_DIR$/public/assets/js/Discover.js" />
+        <option value="$PROJECT_DIR$/public/assets/js/searchSong.js" />
+        <option value="$PROJECT_DIR$/public/assets/css/style.css" />
+        <option value="$PROJECT_DIR$/public/index.html" />
+        <option value="$PROJECT_DIR$/public/assets/js/main.js" />
+        <option value="$PROJECT_DIR$/main.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-14" />
+    <option name="width" value="1628" />
+    <option name="height" value="1814" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="SearchEverywhereHistoryKey" value="http&#9;null&#9;null" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bd543537-839f-4ba1-9f1d-f59c5727ee9b" name="Default" comment="" />
+      <created>1526724070864</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1526724070864</updated>
+      <workItem from="1526724072451" duration="3670000" />
+      <workItem from="1526733634684" duration="648000" />
+      <workItem from="1526742404292" duration="12310000" />
+      <workItem from="1526802190179" duration="28505000" />
+      <workItem from="1526895355340" duration="5457000" />
+      <workItem from="1526913440468" duration="18230000" />
+      <workItem from="1526980838008" duration="20158000" />
+      <workItem from="1527079404934" duration="615000" />
+      <workItem from="1527086529486" duration="2348000" />
+      <workItem from="1527088947856" duration="13643000" />
+      <workItem from="1527106581655" duration="60000" />
+      <workItem from="1527155452315" duration="5658000" />
+      <workItem from="1527173168557" duration="622000" />
+      <workItem from="1527235863818" duration="3075000" />
+      <workItem from="1527350758879" duration="11579000" />
+      <workItem from="1527415691595" duration="3021000" />
+      <workItem from="1527496082629" duration="5520000" />
+      <workItem from="1527512908424" duration="12822000" />
+      <workItem from="1527578303654" duration="7736000" />
+      <workItem from="1527675300669" duration="46078000" />
+      <workItem from="1527836177075" duration="14643000" />
+      <workItem from="1527857531805" duration="238000" />
+      <workItem from="1528044640777" duration="13196000" />
+      <workItem from="1528105292324" duration="4868000" />
+      <workItem from="1528128359364" duration="9185000" />
+      <workItem from="1528189659695" duration="6733000" />
+      <workItem from="1528206185818" duration="3849000" />
+      <workItem from="1528217211417" duration="257000" />
+      <workItem from="1528280464304" duration="23122000" />
+      <workItem from="1528306438842" duration="3171000" />
+      <workItem from="1528309708065" duration="438000" />
+      <workItem from="1528319937098" duration="299000" />
+      <workItem from="1528320359950" duration="1443000" />
+      <workItem from="1528359690650" duration="29823000" />
+      <workItem from="1528400497969" duration="2494000" />
+      <workItem from="1529506572438" duration="7337000" />
+      <workItem from="1529565203910" duration="6265000" />
+      <workItem from="1529599301203" duration="14449000" />
+      <workItem from="1529654518863" duration="812000" />
+      <workItem from="1529663297686" duration="11000" />
+      <workItem from="1529845233386" duration="7773000" />
+      <workItem from="1529939608573" duration="9698000" />
+      <workItem from="1530026621872" duration="7730000" />
+      <workItem from="1530808645587" duration="326000" />
+      <workItem from="1530960981939" duration="3408000" />
+      <workItem from="1530969446165" duration="13035000" />
+      <workItem from="1531044283319" duration="20871000" />
+      <workItem from="1531130869959" duration="18835000" />
+      <workItem from="1531216282430" duration="3751000" />
+      <workItem from="1531235989293" duration="3944000" />
+      <workItem from="1531557740901" duration="12790000" />
+      <workItem from="1531731533262" duration="22299000" />
+      <workItem from="1531817966393" duration="7536000" />
+      <workItem from="1531849980446" duration="7457000" />
+      <workItem from="1531910024321" duration="598000" />
+      <workItem from="1531991334014" duration="26775000" />
+      <workItem from="1532081296828" duration="12875000" />
+      <workItem from="1532165019661" duration="20537000" />
+      <workItem from="1532254184537" duration="28073000" />
+      <workItem from="1532334792810" duration="32058000" />
+      <workItem from="1532376692795" duration="1714000" />
+      <workItem from="1532418984683" duration="37253000" />
+      <workItem from="1532504651776" duration="30815000" />
+      <workItem from="1532591311742" duration="2363000" />
+      <workItem from="1532594294235" duration="12213000" />
+      <workItem from="1532612418969" duration="12302000" />
+      <workItem from="1532682405156" duration="8686000" />
+      <workItem from="1532801088444" duration="6370000" />
+      <workItem from="1532856754438" duration="33875000" />
+      <workItem from="1532937710395" duration="25457000" />
+      <workItem from="1533029580125" duration="5687000" />
+      <workItem from="1533044539783" duration="7325000" />
+      <workItem from="1533072032417" duration="299000" />
+      <workItem from="1533217046800" duration="19766000" />
+      <workItem from="1533240041051" duration="3029000" />
+      <workItem from="1533286190934" duration="30406000" />
+      <workItem from="1533330489077" duration="6321000" />
+      <workItem from="1533368562063" duration="9047000" />
+      <workItem from="1533397976975" duration="2156000" />
+      <workItem from="1533401427769" duration="4788000" />
+      <workItem from="1533406344396" duration="412000" />
+      <workItem from="1533475499798" duration="1066000" />
+      <workItem from="1533476672270" duration="14257000" />
+      <workItem from="1533544805230" duration="6837000" />
+      <workItem from="1533557601418" duration="32715000" />
+      <workItem from="1533625812413" duration="9847000" />
+      <workItem from="1533644905692" duration="403000" />
+      <workItem from="1533657781960" duration="11716000" />
+      <workItem from="1533681056310" duration="474000" />
+      <workItem from="1533720187344" duration="59000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="942415000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-16" y="-16" width="3232" height="1832" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298346" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294347" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.419827" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="22" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../untitled/main.js" />
+    <entry file="file://$USER_HOME$/Downloads/chat_desktop_web/app/my_module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/chat_desktop_web/app/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/plugin/bootstrap/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="7432" column="1" lean-forward="false" selection-start-line="7432" selection-start-column="1" selection-end-line="7432" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Hertz5/Hertz/public/assets/js/searchSong.js" />
+    <entry file="file://$PROJECT_DIR$/../Hertz5/Hertz/public/style.css" />
+    <entry file="file://$PROJECT_DIR$/../Hertz5/Hertz/public/index.html" />
+    <entry file="file://$PROJECT_DIR$/node_modules/express/lib/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="22" column="4" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/express/lib/response.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="19" column="4" lean-forward="false" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/express/lib/request.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="19" column="4" lean-forward="false" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/bootstrap-slider/dependencies/js/jquery.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-356">
+          <caret line="3" column="1991" lean-forward="false" selection-start-line="3" selection-start-column="1991" selection-end-line="3" selection-end-column="1991" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/chat_desktop_web/app_deskto/www/assets/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/chat_desktop_web/app_deskto/www/assets/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4247">
+          <caret line="4" column="21" lean-forward="true" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hertz_desktop.js" />
+    <entry file="file://$PROJECT_DIR$/../app/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="7" column="35" lean-forward="true" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/chat_desktop_web/app_deskto/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1033">
+          <caret line="224" column="63" lean-forward="true" selection-start-line="224" selection-start-column="4" selection-end-line="224" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/chat_desktop_web/app_deskto/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../hertz_desktop/public/style.css" />
+    <entry file="file://$PROJECT_DIR$/../hertz_desktop/public/assets/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1273">
+          <caret line="681" column="29" lean-forward="false" selection-start-line="681" selection-start-column="29" selection-end-line="681" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../hertz_desktop/public/assets/js/searchSong.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="67" column="27" lean-forward="false" selection-start-line="67" selection-start-column="24" selection-end-line="67" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../hertz_desktop/public/assets/js/Discover.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="723">
+          <caret line="333" column="24" lean-forward="false" selection-start-line="333" selection-start-column="21" selection-end-line="333" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../hertz_desktop/public/assets/plugin/jquery-3.3.1.min.js" />
+    <entry file="file://$PROJECT_DIR$/../App Desktop/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../hertz_desktop/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-160">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../hertz_desktop/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="978">
+          <caret line="274" column="34" lean-forward="false" selection-start-line="274" selection-start-column="34" selection-end-line="274" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../hertz_desktop/public/assets/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4440">
+          <caret line="193" column="37" lean-forward="false" selection-start-line="193" selection-start-column="37" selection-end-line="193" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../App Desktop/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="14" column="62" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../hertz_desktop/hertz_desktop.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="18" column="53" lean-forward="false" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa14932.3755/main.js" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa14932.2895/main.js" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa13632.44929/main.js" />
+    <entry file="file://$PROJECT_DIR$/../Hertz7/Hertz/main.js" />
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/phrase.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="182" column="16" lean-forward="false" selection-start-line="182" selection-start-column="16" selection-end-line="182" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/css/style-register.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="60" column="87" lean-forward="false" selection-start-line="60" selection-start-column="26" selection-end-line="60" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Hertz7/Hertz/public/assets/js/main.js" />
+    <entry file="file://$PROJECT_DIR$/../HertzQUASIFINITO/Hertz/public/assets/js/main.js" />
+    <entry file="file://$PROJECT_DIR$/public/style.css" />
+    <entry file="file://$PROJECT_DIR$/date.js" />
+    <entry file="file://$PROJECT_DIR$/../hertz_desktop.js" />
+    <entry file="file://$PROJECT_DIR$/public/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="47" column="79" lean-forward="false" selection-start-line="47" selection-start-column="78" selection-end-line="47" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../index.html" />
+    <entry file="file://$PROJECT_DIR$/../Hertz_Deskop/public/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="913">
+          <caret line="75" column="94" lean-forward="false" selection-start-line="75" selection-start-column="94" selection-end-line="75" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../hertz_desktop/public/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2127">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Hertz_Deskop/hertz_desktop.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Hertz_Deskop/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1113">
+          <caret line="342" column="59" lean-forward="false" selection-start-line="342" selection-start-column="59" selection-end-line="342" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27480">
+          <caret line="687" column="13" lean-forward="false" selection-start-line="687" selection-start-column="13" selection-end-line="687" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/js/Discover.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="10" column="34" lean-forward="false" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/js/searchSong.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="4" column="34" lean-forward="false" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="34" />
+          <folding>
+            <marker date="1533678560549" expanded="true" signature="6760:6775" ph="..." />
+            <marker date="1533678560549" expanded="true" signature="7315:7349" ph="..." />
+            <marker date="1533678560549" expanded="true" signature="7489:7523" ph="..." />
+            <marker date="1533678560549" expanded="true" signature="7658:7676" ph="..." />
+            <marker date="1533678560549" expanded="true" signature="8060:8091" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="14" column="14" lean-forward="false" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6475">
+          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding>
+            <marker date="1533720246259" expanded="true" signature="13824:13840" ph="..." />
+            <marker date="1533720246259" expanded="true" signature="18034:18048" ph="..." />
+            <marker date="1533720246259" expanded="true" signature="21284:21369" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="10" column="56" lean-forward="false" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

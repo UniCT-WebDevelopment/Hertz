@@ -1,0 +1,85 @@
+*{
+    font-family: 'Quicksand', sans-serif;
+}
+
+body{
+    background-color: rgba(255, 107, 107, 0.9);
+}
+
+@media (min-width: 576px){
+    .modal-dialog {
+        max-width: 1000px;
+    }
+}
+
+
+@media only screen and (max-width: 769px) {
+    #profile-header{
+        height: 240px;
+    }
+    .espanditi{
+        height: 100%;
+        margin: 0 auto;
+    }
+}
+
+.modal-content {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.form-logo {
+    width: 30%;
+    margin: 0 auto;
+}
+
+.profile-pic-dialog{
+    width: 100%;
+    height: 150px;
+}
+
+.profile-pic{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 155px;
+    height: auto;
+    margin: 0 auto;
+    background-image: url("../img/female-avatar-profile.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="file"]:focus,
+input[type="radio"]:focus,
+.custom-file-label:focus{
+    border-color: rgba(255, 107, 107, 0.9);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 107, 107, 0.9);
+    outline: 0 none;
+}
+/* SCROLLBAR */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background-color: white;
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0.4);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0,0,0,0.6);
+}

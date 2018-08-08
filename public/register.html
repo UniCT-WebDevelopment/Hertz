@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Adriana Maccarrone">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/hertzlogoicon.png">
+
+    <title>hertz</title>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    <link rel="stylesheet" type="text/css" href="assets/plugin/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style-register.css">
+
+</head>
+<body>
+<div class="container">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header col-sm-12">
+                <a class="form-logo"><img src="assets/img/hertzlogo.png" class="img-fluid"></a>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div class="alert alert-success d-none" id="alert-register"></div>
+                <form action="/register" method="post">
+                    <div class="form-row" id="profile-header">
+                        <div class="profile-pic-dialog d-md-inline-flex">
+                            <div class="form-group mb-0 pr-0 col-md-4 espanditi">
+                                <div class="profile-pic rounded-circle"></div>
+                            </div>
+                            <div class="form-group col-md-7 mt-0 mt-5">
+                                <label class="custom-file-label" for="profileImage">Choose file</label>
+                                <input type="file" class=" form-control mt-0 custom-file-input" id="profileImage">
+                                <small id="ImageHelpBlock" class="form-text text-muted">
+                                    Your picture must be max 800KB.
+                                </small>
+                                <div class="invalid-feedback d-none" id="choose-profilepic"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group mt-4 pl-2 pr-2">
+                        <label for="username">Username*</label>
+                        <input type="text" class="form-control" id="username" placeholder="Username">
+                        <div class="invalid-feedback d-none" id="choose-username"></div>
+                    </div>
+
+                    <div class="form-row mt-4 pl-2 pr-2">
+                        <div class="form-group col-md-6">
+                            <label for="passwordInput">Password*</label>
+                            <input type="password" class="form-control" id="passwordInput" placeholder="Password">
+                            <div class="invalid-feedback d-none" id="choose-password"></div>
+                            <small id="passwordHelpBlock" class="form-text text-muted">
+                                Your password must be max 8-20 characters long, can contain letters and numbers, and must not contain spaces or special characters.
+                            </small>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="repeatPassword">Repeat Password*</label>
+                            <input type="password" class="form-control" id="repeatPassword">
+                            <div class="invalid-feedback d-none" id="repeat-password"></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="submit" value="Submit" class="btn btn-secondary" id="registration-btn">Register</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+<script src="assets/plugin/bootstrap/js/bootstrap.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

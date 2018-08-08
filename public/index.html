@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="description" content="">
+    <meta name="author" content="Adriana Maccarrone">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/hertzlogoicon.png">
+
+    <title>hertz</title>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    <link rel="stylesheet" type="text/css" href="assets/plugin/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" media="all" href="assets/plugin/Hover-master/css/hover.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+        <!--NAVBAR FIRST ROW-->
+        <nav class="navbar navbar-light fixed-top bg-light flex-nowrap p-0 shadow">
+            <a class="navbar-brand p-1"><img src="assets/img/hertzlogoicon.png" width="80" class="img-fluid" /></a>
+            <div class="input-group m-2 p-0" id="nav-input">
+                <div class="input-group-append">
+                    <button class="btn" id="btn-search" type="button" disabled><i class="fas fa-search"></i></button>
+                </div>
+                <input class="form-control is-invalid" id="search-input" autocomplete="off" style="width: 20px" type="text" placeholder="Search songs, artists..." aria-label="Search" readonly>
+            </div>
+            <div class="dropdown m-2">
+                <button type="button" id="btn-signin" class="btn btn-light text-nowrap dropdown-toggle" data-toggle="modal"  data-target="#myModal1">
+                    <div class="profile-pic rounded-circle d-inline-flex"></div>
+                    <span id="username">Sign In </span>
+                </button>
+                <!-- Quando si effettua il login cambia il data-toggle in dropdown-->
+                <div class="dropdown-menu" aria-labelledby="btn-signin">
+                    <a class="dropdown-item" id="logout" href="">Logout</a>
+                    <a class="dropdown-item" id="profile-settings">Profile Settings</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- FASCIA CENTRALE -->
+    <div class="row">
+        <!-- LEFT SIDEBAR  -->
+        <div class="col-md-12 d-inline-flex p-0">
+            <nav class="navbar navbar-light bg-light d-md-block d-sm-inline-flex sidebar col-md-1">
+                <div class="sidebar-sticky d-flex flex-md-column flex-sm-row flex-nowrap">
+                    <a class="nav-link left-button bg-light hvr-underline-from-left" id="on-playing" href="#">
+                        <i class="fas fa-headphones"></i>
+                    </a>
+                    <a class="nav-link left-button bg-light hvr-underline-from-left" id="discover-page" href="#">
+                        <i class="fas fa-globe"></i>
+                    </a>
+                    <a class="nav-link left-button bg-light hvr-underline-from-left" id="user-favorites" href="#">
+                        <i class="far fa-star"></i>
+                    </a>
+                    <a class="nav-link left-button bg-light hvr-underline-from-left"  id="user-playlist" href="#">
+                        <i class="fas fa-list"></i>
+                    </a>
+                    <a class="nav-link left-button bg-light hvr-underline-from-left" id="user-setting" href="#">
+                        <i class="fas fa-user"></i>
+                    </a>
+                </div>
+            </nav>
+            <!-- CENTER -->
+            <div class="col-sm-12 col-md-8 central-container">
+                <div class="alert alert-warning m-3 d-none" role="alert">
+                    You must be logged in!
+                </div>
+                <div class="central-sticky-container justify-content-sm-center">
+                    <div class="jumbotron m-3" id="initial-screen">
+                        <div class="sfondo m-0 p-0"></div>
+                        <img src="assets/img/hertzlogo.png" style="width: 40%;" class="img-fluid">
+                        <div class="d-inline-flex flex-nowrap float-right">
+                            <a class="btn btn-secondary btn-sm mr-2" href="#" role="button" data-toggle="modal" data-target="#myModal1">Sign In</a>
+                            <a class="btn btn-secondary btn-sm mr-3" href="register.html" role="button">Register</a>
+                        </div>
+                        <p class="lead mt-4">You are</p>
+                        <p class="lead">What you listen to!</p>
+                        <hr class="my-2">
+                        <!--<a class="btn btn-secondary btn-lg float-right" href="#" role="button">Learn more</a>-->
+                        <p class="mt-3 mb-0 login-link">Sign In to listen to all your music, wherever you are!</p>
+                        <p class="mb-0 login-link">Not yet registered? What are you waiting for, do it now!</p>
+                    </div>
+                    <div class="loader d-none"></div>
+                    <div id="video-hidden-window" class=""></div>
+                    <div class="d-none w-100" id="result-container"></div>
+                    <div class="m-2 pr-3 d-none" id="play-song"></div>
+                    <div class="m-2 d-none" id="discover">
+                        <div class="jumbotron m-3">
+                            <div class="sfondo2 m-0 p-0"></div>
+                            <img src="assets/img/hertzlogo.png" style="width: 40%;" class="img-fluid">
+                            <hr>
+                        </div>
+                        <h4 class="pt-2 m-3"><i class="fas fa-compact-disc"></i> Categories</h4>
+                        <div class="w-100 m-2 pl-2 pr-4 d-md-inline-flex d-sm-block" id="buttons">
+                            <button id="rock-btn" class="btn btn-secondary categories m-2 w-100">ROCK</button>
+                            <button id="indie-btn" class="btn btn-secondary categories m-2 w-100">INDIE</button>
+                            <button id="pop-btn" class="btn btn-secondary categories m-2 w-100">POP</button>
+                            <button id="dance-btn" class="btn btn-secondary categories m-2 w-100">DANCE</button>
+                            <button id="latina-btn" class="btn btn-secondary categories m-2 w-100">LATINA</button>
+                        </div>
+                        <div class="m-2 p-2 w-100 d-none rock"><ul class="p-0 ml-2 mr-4" id="rock-song"></ul></div>
+                        <div class="m-2 p-2 w-100 d-none indie"><ul class="p-0 ml-2 mr-4" id="indie-song"></ul></div>
+                        <div class="m-2 p-2 w-100 d-none pop"><ul class="p-0 ml-2 mr-4" id="pop-song"></ul></div>
+                        <div class="m-2 p-2 w-100 d-none dance"><ul class="p-0 ml-2 mr-4" id="dance-song"></ul></div>
+                        <div class="m-2 p-2 w-100 d-none latina"><ul class="p-0 ml-2 mr-4" id="latina-song"></ul></div>
+                        <h4 class="pt-2 m-3"><i class="fas fa-fire"></i> Italian Trending
+                            <span class="more-less ml-2"><i id="less" class="fas fa-chevron-up"></i></span>
+                        </h4>
+                        <hr>
+                        <div class="m-2 w-100"><ul class="p-0 ml-2 mr-4" id="trending-italy"></ul></div>
+                        <h4 class="pt-2 m-3"><i class="fas fa-fire"></i> World Trending
+                            <span class="more-less ml-2"><i id="less2" class="fas fa-chevron-up"></i></span>
+                        </h4>
+                        <hr>
+                        <div class="m-2 w-100"><ul class="p-0 ml-2 mr-4" id="trending-world"></ul></div>
+                    </div>
+                    <div class="m-2 d-none" id="playlist-page">
+                        <div class="w-100 m-3 pt-2 d-inline-flex">
+                            <div class="w-100"><h3><i class="fas fa-list" style="color: #ff6b6b;"></i>  Playlist</h3></div>
+                            <div class="w-100" style="text-align: right">
+                                <button class="btn btn-sm btn-secondary mr-5" id="btn-newplaylist" data-toggle="modal" data-target="#myModalPlaylist" style="height: 30px">New Playlist</button>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="w-100 m-3 pt-2 d-block" id="playlistList"></div>
+                    </div>
+                    <div class="m-2 d-none" id="user-settings">
+                        <div class="modal-header">
+                            <h3 class="m-1"><i class="fas fa-cog"></i> Profile Settings</h3>
+                        </div>
+                        <div class="modal-body">
+                            <div class="alert alert-success d-none" id="alert-settings"></div>
+                            <form>
+                                <div class="form-row">
+                                    <div class="profile-pic-dialog d-md-inline-flex">
+                                        <div class="form-group mb-0 pr-0 mr-4 mb-2 col-md-4 espanditi">
+                                            <div class="profile-pic rounded-circle" id="change-profile-pic"></div>
+                                        </div>
+                                        <div class="form-group col-md-7 mt-sm-0 mt-md-5">
+                                            <label class="custom-file-label" for="profileImage">Choose file</label>
+                                            <input type="file" class=" form-control mt-0 custom-file-input" id="profileImage">
+                                            <small id="ImageHelpBlock" class="form-text text-muted">
+                                                Your picture must be max 800KB.
+                                            </small>
+                                            <div class="invalid-feedback d-none" id="choose-profilepic"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group mt-md-1 pl-2 pr-2 pt-5" id="change-form">
+                                    <label for="username">Change your username...</label>
+                                    <input type="text" class="form-control" id="change-username" placeholder="New Username">
+                                </div>
+                                <div class="form-row mt-4 pl-2 pr-2">
+                                    <div class="form-group col-md-6">
+                                        <label for="old-password">Change your password...</label>
+                                        <input type="password" class="form-control" id="old-password" placeholder="Old Password">
+                                        <div class="invalid-feedback d-none" id="old-password-check"></div>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="new-password">Choose a new Password</label>
+                                        <input type="password" class="form-control" id="new-password" placeholder="New Password">
+                                        <small id="passwordHelpBlock" class="form-text text-muted">
+                                            Your password must be max 8-20 characters long, can contain letters and numbers, and must not contain spaces or special characters.
+                                        </small>
+                                        <div class="invalid-feedback d-none" id="new-password-check"></div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <a href="" class="m-1" id="delete-account" data-toggle="modal" data-target="#myModalConfirm">Delete Account</a>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary btn-lg" id="settings-btn">Save</button>
+                        </div>
+                    </div>
+                    <!-- The Modal -->
+                    <div class="modal fade" id="myModalConfirm">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Delete Account</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    Do you want delete your account? Are you sure?
+                                </div>
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" id="btn-delete" data-dismiss="modal">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-2 d-none" id="favorites-page">
+                        <h4 class="pt-2 m-3"><i style="color: #ff6b6b" class="fas fa-star"></i> Favorites</h4>
+                        <hr>
+                        <ul class="p-0 ml-2 mr-4" id="favorites"></ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Login Form -->
+            <div class="modal fade" id="myModal1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">Sign In</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <div class="alert alert-success d-none" id="alert"></div>
+                            <form action="/login" method="post">
+                                <div class="form-group">
+                                    <label for="usernameinput">Username</label>
+                                    <input type="text" class="form-control" id="usernameinput" aria-describedby="userHelp" placeholder="Enter Username">
+                                    <div class="invalid-feedback d-none" id="invalid-username"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="passwordinput">Password</label>
+                                    <input type="password" class="form-control" id="passwordinput" placeholder="Password">
+                                    <div class="invalid-feedback d-none" id="invalid-password"></div>
+                                </div>
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input" value="1" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Remember me!</label>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-secondary" id="btn-login" data-dismiss="">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Playlist Modal -->
+            <div class="modal fade" id="myModalPlaylist">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="modal-title"></h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <form action="" method="post">
+                                <div class="form-group">
+                                    <label for="playlistInput">Playlist Name:</label>
+                                    <input type="text" class="form-control" id="playlistInput" aria-describedby="userHelp" placeholder="Name">
+                                </div>
+                                <div class="d-none" id="playlist-div">
+                                    <p>Add to a Playlist: </p>
+                                    <ul id="modalPlaylist"></ul>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" id="btn-save-name" data-dismiss="modal">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!-- RIGHT SIDEBAR -->
+            <nav class="navbar navbar-light bg-light d-md-block right-sidebar col-md-3">
+                <div class="right-sidebar-sticky">
+                    <ul class="nav d-flex flex-column flex-nowrap">
+                        <li class="nav-item" id="online-user">
+                            <p class="online-user">Online Users Activities</p>
+                            <hr>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!--  PLAYER -->
+    <div class="row">
+        <nav class="navbar navbar-light bg-light fixed-bottom d-flex flex-md-row flex-md-nowrap player col-sm-12  justify-content-sm-center">
+            <div class="d-inline-flex left-side col-md-3 col-sm-12 mobile-centered justify-content-sm-center">
+                <div class="nav-item player-btn" id="backward">
+                    <i class="fa fa-step-backward"></i>
+                </div>
+                <div class="nav-item player-btn" id="play">
+                    <i class="fa fa-play"></i>
+                </div>
+                <div class="nav-item player-btn" id="forward">
+                    <i class="fa fa-step-forward ml-1"></i>
+                </div>
+                <div class="nav-item d-inline-flex mobile-hidden">
+                    <div class="nav-item player-btn pr-0" id="volume">
+                        <i class="fas fa-volume-up"></i>
+                    </div>
+                    <div class="nav-item control-nav">
+                        <div class="slidecontainer">
+                            <input type="range" min="0" max="100" value="20" class="slider" id="myRange">
+                            <div class="progress-bar-volume" style="width: 18.1% ;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-inline-flex center-side col-md-6 col-sm-12">
+                <p class="mr-2 pl-3" id="current-time">0:00</p>
+                <div class="slidecontainer">
+                    <input type="range" value="0" class="slider" id="progress-bar" style="z-index: 1">
+                    <div class="progressbar"></div>
+                </div>
+                <p class="ml-2" id="duration">0:00</p>
+            </div>
+            <div class="d-sm-none d-md-inline-flex right-side col-md-3 mobile-hidden" id="song-info">
+                <img src="assets/img/round-album-24px.svg" width="50" height="50" class="img-fluid img-thumbnail" id="cover" alt="">
+                <div class="d-block ml-2">
+                    <p class="mesh-title mb-1">Song Name</p>
+                    <p class="mesh-artist mb-0">Artist</p>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<script src="https://www.youtube.com/iframe_api"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+<script src="assets/plugin/bootstrap/js/bootstrap.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+<script src="assets/js/searchSong.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/Discover.js"></script>
+
+</body>
+</html>
